@@ -1,0 +1,495 @@
+.contact-button {
+    border-radius: 20px !important;
+    background-color: rgb(255, 153, 0);
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.contact-button svg {
+    fill: white;
+    transition: all 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: white  !important;
+    color: rgb(0, 192, 232);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-button:hover svg {
+    fill: rgb(0, 192, 232);
+}
+.learnmore:hover {
+    text-decoration: underline;
+    color: rgb(0, 192, 232);
+}
+.about__pic__item {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.about__pic__item::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.5); /* Nền đen trong suốt */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.about__pic__item:hover::before {
+    opacity: 1;
+}
+
+.about__pic__item .content {
+    position: absolute;
+    bottom: 10%; /* Cách đáy 10% để nằm trong vùng của ::before */
+    left: 50%;
+    transform: translateX(-50%); 
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    width: 100%; /* Chiều rộng nội dung chiếm toàn bộ vùng cha */
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 0.3s ease;
+}
+
+.about__pic__item:hover .content {
+    opacity: 1;
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* #typing-text {
+    border-right: 2px solid;
+    display: inline;
+    white-space: nowrap;
+    overflow: hidden;
+} */
+.statistical
+{
+    background-color: rgb(247, 248, 252);
+    max-width:1058px;
+    height: 120px;
+    position: absolute;
+    top: -60px;
+    z-index: 1;
+    left: 15%;
+    right: 15%;
+    bottom: 5px;
+}
+@media (max-width: 1024px) { /* Kích thước màn hình nhỏ hơn máy tính */
+    .statistical {
+        width: 100%; /* Điều chỉnh lại kích thước */
+        top: -80px;
+        left: 0; /* Căn giữa theo chiều ngang */
+    }
+}
+.statistical-item{
+    text-align: center; 
+    border-right: 2px solid rgb(86, 196, 239);
+    margin-right: 4px;
+}
+
+.hover__item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+    padding: 6px;
+ 
+}
+
+/* Hiệu ứng khi hover */
+.hover__item:hover {
+    border-radius: 10px;
+    transform: scale(1.05); /* Phóng to 5% */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Thêm hiệu ứng shadow */
+}
+.button-carousel-next
+{
+background-color: rgb(0, 192, 232);
+border:none;
+height: 10% !important;
+bottom:-15px;
+right:40%;
+}
+.button-carousel-prev
+{
+background-color: rgb(0, 192, 232);
+border:none;
+height: 10% !important;
+bottom:-15px;
+left:20%;
+}
+
+/* client say */
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgb(249, 250, 253);
+}
+
+.card h4 {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 18px;
+    left: 0;
+    width: 100%;
+    height: 25%;
+    background-color: rgb(135, 216, 233);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container:hover .overlay {
+    opacity: 0.6;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+}
+
+.icons a {
+    color: rgb(66, 193, 219);
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
+.icons a:hover {
+    color: rgb(41, 86, 202);
+    transform: scale(1.2);
+}
+.textfade span {
+    color: #ffffff;
+    display: block;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    position: relative;
+    top: -40px;
+    opacity: 1;
+    -webkit-transition: all, 0.3s;
+    -o-transition: all, 0.3s;
+    transition: all, 0.3s;
+  }
+  .textfade h2 {
+    color: rgb(161, 230, 244);
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 70px;
+    text-transform: uppercase;
+    margin-bottom: 38px;
+    -webkit-transition: all, 0.5s;
+    -o-transition: all, 0.5s;
+    transition: all, 0.5s;
+  }
+  #cursor {
+    display: inline-block;
+    width: 10px;
+    visibility: visible;
+}
+@media (max-width: 1024px) { /* Kích thước màn hình nhỏ hơn máy tính */
+    .textfade h2 {
+        color: rgb(161, 230, 244);
+        font-size: 30px;
+        font-weight: 200;
+        line-height: 50px;
+        text-transform: uppercase;
+        margin-bottom: 38px;
+        -webkit-transition: all, 0.5s;
+        -o-transition: all, 0.5s;
+        transition: all, 0.5s;
+      }
+}
+.map-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #f0f0f0;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+h4.font-weight-bold {
+    color: #2c3e50; /* Customize the heading color */
+}
+
+p {
+    color: #6c757d; /* Customize the paragraph color */
+}
+.banner {
+    position: relative;
+    background-size: cover;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Overlay effect */
+}
+.banner-content {
+    position: relative;
+    z-index: 1;
+}
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+.stat-item {
+    text-align: center;
+}
+.stat-item h3 {
+    color:rgb(18, 97, 166);
+    font-size: 48px;
+    margin-bottom: 5px;
+}
+.stat-item p {
+    margin: 0;
+    font-size: 16px;
+}
+.icon-check {
+    font-size: 40px;
+    margin-right: 10px;
+    color:rgb(18, 97, 166);; /* Yellow color for the icon */
+}
+.industries-section {
+    padding: 50px 0;
+}
+.industries-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.industry-card {
+    margin-bottom: 30px;
+}
+.industry-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.industry-card .card-body {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #ffffff;
+}
+.world-map {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
+.office-location {
+    position: absolute;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    max-width: 200px;
+    height: 170px;
+}
+.office-location h5 {
+    color: #00C0E8;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.office-location p {
+    margin-bottom: 5px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+/* Specific positions for each location */
+.thuduc { top: 62%; left: 80%; }
+.danang { top: 2%; left: 80%; }
+.cantho { top: 32%; left: 80%; }
+@media (max-width: 576px) { /* Kích thước màn hình nhỏ hơn máy tính */
+    .thuduc { top: 62%; left: 35%; }
+    .danang { top: 2%; left: 35%; }
+    .cantho { top: 32%; left: 35%; }
+   }
+.title-hero
+{
+    font-size: 40px;
+    color:rgb(3, 193, 232);
+}
+.statistical-hero
+{
+    display: block;
+}
+@media (max-width: 576px) { /* Kích thước màn hình nhỏ hơn máy tính */
+ .statistical-hero
+    {
+        display: none !important;
+    }
+}
+.customer-relative
+{
+    position: relative;
+}
+.customers{
+    position: absolute;
+    top:-200px;
+    height:450px;
+    z-index:1;
+    background-color: #ffffff;
+}
+@media (max-width: 576px) { /* Kích thước màn hình nhỏ hơn máy tính */
+    .customers{
+        bottom: 0%;
+        height:320px;
+        z-index:99;
+        background-color: #ffffff;
+    }
+   }
+  @media (max-width: 576px) { /* Kích thước màn hình nhỏ hơn máy tính */
+        
+    .section-title span {
+           margin-top: 80px;
+          }
+   }
+   @media (max-width: 576px) { /* Kích thước màn hình nhỏ hơn máy tính */
+        
+    .stat-item h3 {
+        font-size: 30px;
+          }
+   }
+   .menu-overlay{
+    display: none;
+   }
+   .iconclose{
+    position: absolute;
+    top:0;
+    right:0;
+    display: none;
+   }
+   @media (max-width: 576px) { /* Kích thước màn hình nhỏ hơn máy tính */
+        
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 30px;
+        height: 30px;
+        float: right;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+    
+    .bar {
+        width: 100%;
+        height: 4px;
+        background-color: rgb(38, 168, 190);
+        transition: all 0.3s ease;
+    }
+    
+    /* X Icon */
+    .bar1.transform {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .bar2.transform {
+        opacity: 0;
+    }
+    
+    .bar3.transform {
+        transform: rotate(-45deg) translate(6px, -6px);
+    }
+    .menu-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(237, 240, 250);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transform: translateY(-100%);
+        transition: transform 0.3s ease;
+        z-index: 9;
+    }
+
+    .menu-overlay.open {
+        transform: translateY(0);
+    }
+
+    .menu-overlay ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .menu-overlay ul li {
+        margin: 20px 0;
+    }
+
+    .menu-overlay ul li a {
+        color: rgb(58, 57, 57);
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .iconclose{
+        display: block;
+       }
+   }
+   html {
+    scroll-behavior: smooth;
+}
+
+ 
